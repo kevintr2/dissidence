@@ -76,9 +76,9 @@ nav ul li {
 	padding:25px 35px;
 	display: inline-block;
 	list-style: none;
-	font-family: 'Roboto';
-	font-size: 18px;
-	font-weight: 500;
+	font-family: 'Raleway';
+	font-size: 16px;
+	font-weight: 200;
 	font-variant: small-caps;
 }
 
@@ -112,9 +112,9 @@ nav ul li a:hover {
 h2 {
 	margin: 0;
     padding: 0;
-    font-size: 17px;
+    font-size: 12px;
     font-family: 'Raleway';
-    font-weight: 500;
+    font-weight: 200;
     color: #FFFFFF;
     font-variant: small-caps;
     letter-spacing: 4px;
