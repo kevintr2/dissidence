@@ -146,7 +146,7 @@ h2 a{
     float: left;
 }
 
-#previews img .longprev {
+.longprev {
 	width:100%;
 }
 
