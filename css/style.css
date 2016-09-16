@@ -139,9 +139,15 @@ h2 a{
 }
 
 #previews img{
-	margin-top:22vh;
-	margin-right: 2px;
-	margin-left: 2px;
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    float: left;
+}
+
+img .longprev {
+	width:100%;
 }
 
 h4 {
