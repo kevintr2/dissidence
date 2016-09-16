@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="scroll.js"></script>
+	<meta charset="UTF-8">
+	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+	<link href="styles/ihover.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css"/>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:500,400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:500,700' rel='stylesheet' type='text/css'>
+	<!-- <link rel="icon" type="image/png" href="img/icone.png" /> !-->
+ 	<title>
+		Dissidence
+ 	</title>
+</head>
+
+<body>
+	<header>
+		<div id="logo">
+			<h1>Dissidence</h1>
+		</div>
+
+		<nav>
+			<ul>
+				<li><a href="#pub">publicités</a></li>
+				<li><a href="#clips">clips</a></li>
+				<li><a href="#contact">contact</a></li>
+			</ul>
+		</nav>
+
+		<div id="ptexte">
+			<h2>discover</h2>
+			<h3>our vision</h3>
+		</div>
+	</header>
+
+	<div id="pub">
+		<h4>publicités</h4>
+
+		<div id="video1">
+			<iframe width="100%" height="500" src="https://www.youtube.com/embed/ogocJMqsrWg?rel=0&showinfo=0&controls=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+		</div>
+
+		</div>
+	</div>
+
+	<div id="clips">
+		<h5>clips</h5>
+
+
+		<div id="video2">
+			<iframe width="100%" height="500" src="https://www.youtube.com/embed/PVbQDYzPRYQ?rel=0&showinfo=0&controls=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+		</div>
+
+		<div id="coming">
+			<h6>more coming soon..</h6>
+		</div>
+	</div>
+
+
+	<div id="contact">
+		<h4>contact</h4>
+
+				<div id="formulaire">
+				<form action="post_contact.php" method="POST">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+						<label for="inputname">Votre nom</label>
+						<input required type="text" name="name" id="inputname" value="<?php echo isset($_SESSION['inputs']['name'])? $_SESSION['inputs']['name'] : ''; ?>">
+					</div>
+						</div>
+					<div class="col-md-6">
+						<div class="form-group">
+						<label for="inputmail">Votre e-mail</label>
+						<input required type="email" name="mail" id="inputmail" value="<?php echo isset($_SESSION['inputs']['mail'])? $_SESSION['inputs']['mail'] : ''; ?>">
+					</div>
+						</div>
+					<div class="col-md-12">
+						<div class="form-group">
+						<label for="inputmsg">Votre message</label>
+						<textarea required id="inputmsg" name="msg"><?php echo isset($_SESSION['inputs']['msg'])? $_SESSION['inputs']['msg'] : ''; ?></textarea>
+					</div>
+						</div>
+					<div class="col-md-12">
+					<button type="submit" class="bouton">Envoyer</button>
+					</div>
+					</div>
+				</form>
+			</div>
+
+	</div>
+
+	<footer>
+		<div id="allfooter">
+			<div id="lprojet">
+				<h7>last projects</h7></br>
+
+				<ul>
+					<li><a href="#work">Jazzy Bazz - Le Roseau</a></li>
+					<li><a href="#work">Jazzy Bazz - Ultra Parisien</a></li>
+				</ul>
+			</div>
+
+			<div id="menu">
+				<h7>menu</h7></br>
+
+				<ul>
+					<li><a href="#directors">Directors</a></li>
+					<li><a href="#work">Work</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
+				<ul>
+			</div>
+
+			<div id="social">
+				<h7>social network</h7>
+
+				<ul class="socialicons">
+					<li><a href="#"><img src="img/fb.png"></a></li>
+					<li><a href="#"><img src="img/instagram.png"></a></li>
+					<!-- <li><a href="#"><img src="img/twitter.png"></a></li>
+					<li><a href="#"><img src="img/youtube.png"></a></li> !-->
+				</ul>
+			</div>
+		</div>
+
+		<div id="copyright">
+			<p>Copyright 2016 Kevin TRAN</p>
+		</div>
+	</footer>
+
+
+
+
+
+</body>
+
+</html>

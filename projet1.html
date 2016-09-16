@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="scroll.js"></script>
+	<script>
+			$(document).ready(function(){       
+			   var scroll_start = 0;
+			   var startchange = $('#discover');
+			   var offset = startchange.offset();
+			   $(document).scroll(function() { 
+			      scroll_start = $(this).scrollTop();
+			      if(scroll_start > offset.top) {
+			          $('#navbar').css('background-color', 'rgba(34,34,34,0.8)');   <!-- Changement de couleur de la barre de nav !-->
+			          $('h1').css('color', 'rgba(255,255,255,0.8)'); 
+			          $('nav ul li a').css('color', 'rgba(255,255,255,0.8)'); 
+			       } else {
+			          $('#navbar').css('background-color', 'transparent');
+			          $('h1').css('color', 'rgba(0,0,0,0.8)');
+			          $('nav ul li a').css('color', 'rgba(0,0,0,0.8)'); 
+			       }
+			   });
+			});
+	</script>
+	<meta charset="UTF-8">
+	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+	<link href="styles/ihover.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css"/>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:500,400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:500,700' rel='stylesheet' type='text/css'>
+	<!-- <link rel="icon" type="image/png" href="img/icone.png" /> !-->
+ 	<title>
+		Dissidence
+ 	</title>
+</head>
+
+<body>
+	<header>
+		<div id="landing_rea">
+		<div id="navbar">
+			<div id="logo">
+				<a href="index.html"><img width="145px" height="auto" src="img/logo.png"></a>
+			</div>
+
+			<nav>
+				<ul>
+					<li><a href="index.html">accueil</a></li>
+					<li><a href="#previews">production</a></li>
+					<li><a href="contact.html">contact</a></li>
+				</ul>
+			</nav>
+		</div>
+		</div>
+	</header>
+
+	<div id="realisation">
+		<center><iframe src="https://player.vimeo.com/video/162830628?autoplay=1&title=0&byline=0&portrait=0" width="853" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></center>
+	</div>
+
+
+	<footer>
+		<div id="allfooter">
+			<div id="lprojet">
+				<h7>production</h7></br>
+
+				<ul>
+					<li><a href="projet1.html">Les Néréides</a></li>
+					<li><a href="projet2.html">Nekfeu - Princesse</a></li>
+				</ul>
+			</div>
+
+			<div id="menu">
+				<h7>menu</h7></br>
+
+				<ul>
+					<li><a href="index.html">Accueil</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				<ul>
+			</div>
+
+			<div id="social">
+				<h7>social network</h7>
+
+				<ul class="socialicons">
+					<li><a href="https://www.facebook.com/Dissidence-Production-1020107401397368/?fref=ts"><img src="img/fb.png"></a></li>
+					<li><a href="https://www.instagram.com/dissidenceproduction/"><img src="img/instagram.png"></a></li>
+					<!-- <li><a href="#"><img src="img/twitter.png"></a></li>
+					<li><a href="#"><img src="img/youtube.png"></a></li> !-->
+				</ul>
+			</div>
+		</div>
+
+		<div id="copyright">
+			<p>Copyright 2016 Kevin TRAN</p>
+		</div>
+	</footer>
+
+
+
+
+
+</body>
+
+</html>
