@@ -148,6 +148,7 @@ h2 a{
 
 .longprev {
 	width:100%;
+	display: block;
 }
 
 h4 {
