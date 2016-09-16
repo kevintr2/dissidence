@@ -11,13 +11,13 @@
 			   $(document).scroll(function() { 
 			      scroll_start = $(this).scrollTop();
 			      if(scroll_start > offset.top) {
-			          $('#navbar').css('background-color', 'rgba(34,34,34,0.8)');   <!-- Changement de couleur de la barre de nav !-->
-			          $('h1').css('color', 'rgba(255,255,255,0.8)'); 
-			          $('nav ul li a').css('color', 'rgba(255,255,255,0.8)'); 
+			          $('#navbar').css('background-color', 'rgba(0,0,0,0.1)');   <!-- Changement de couleur de la barre de nav !-->
+			          // $('h1').css('color', 'rgba(255,255,255,0.8)'); 
+			          // $('nav ul li a').css('color', 'rgba(255,255,255,0.8)'); 
 			       } else {
 			          $('#navbar').css('background-color', 'transparent');
-			          $('h1').css('color', 'rgba(0,0,0,0.8)');
-			          $('nav ul li a').css('color', 'rgba(0,0,0,0.8)'); 
+			          // $('h1').css('color', 'rgba(0,0,0,0.8)');
+			          // $('nav ul li a').css('color', 'rgba(0,0,0,0.8)'); 
 			       }
 			   });
 			});
@@ -26,8 +26,8 @@
 	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
 	<link href="styles/ihover.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css"/>
-	<link href='https://fonts.googleapis.com/css?family=Raleway:500,400,700' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Roboto:500,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:200, 500,400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:200, 500,700' rel='stylesheet' type='text/css'>
 	<!-- <link rel="icon" type="image/png" href="img/icone.png" /> !-->
  	<title>
 		Dissidence
@@ -39,7 +39,7 @@
 		<div id="landing_rea">
 		<div id="navbar">
 			<div id="logo">
-				<a href="index.html"><img width="145px" height="auto" src="img/logo.png"></a>
+				<a href="index.html"><img width="145px" height="auto" src="img/wlogo.png"></a>
 			</div>
 
 			<nav>
@@ -52,6 +52,11 @@
 		</div>
 		</div>
 	</header>
+
+<div id="textbox">
+	<p class="nereides">les nereides<br><i style="font-size:12px;">2016</i></p>
+</div>
+
 
 <video autoplay loop id="projetvid1">
 	<source src="img/projet1.mp4" type="video/mp4">
